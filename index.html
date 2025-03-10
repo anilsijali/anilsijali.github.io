@@ -93,6 +93,25 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+         <div id="about" style="padding: 20px; background-color: #f4f4f4;">
+            <h2>About Me</h2>
+            <p>
+                Welcome! I am a passionate web developer with experience in creating beautiful and functional websites. I specialize in HTML, CSS, and JavaScript, and I'm always excited to take on new challenges and learn more about web development.
+            </p>
+        </div>
+        <div id="contact" style="padding: 20px;">
+            <h2>Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>                
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>                
+                <input type="submit" value="Send Message">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
         <script>
             let slideIndex = 1;
             showSlides(slideIndex);
